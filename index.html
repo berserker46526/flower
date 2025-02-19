@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campo de Tulipanes</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      background-image: url('fondo.jpg'); /* Fondo que has descargado */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Estilo del video pequeño y centrado */
+    video {
+      position: absolute;
+      width: 300px; /* Tamaño más pequeño para el video */
+      height: auto;
+      z-index: 1; /* Coloca el video por encima de la imagen */
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .tulip-field {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+      pointer-events: none;
+    }
+
+    .tulip {
+      background-image: url('tulipan.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 55px;
+      height: 75px;
+      margin: 0;
+      opacity: 0.9;
+      transform-origin: bottom center;
+      animation: sway 6s ease-in-out infinite;
+    }
+
+    @keyframes sway {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(-5deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video pequeño y centrado con controles -->
+  <video autoplay loop controls>
+    <source src="amor_completo.mp4" type="video/mp4">
+    <source src="amor_completo.webm" type="video/webm">
+    <source src="amor_completo.ogv" type="video/ogg">
+    Tu navegador no soporta el formato de video.
+  </video>
+
+  <div class="tulip-field">
+    <!-- Fila 1 -->
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+
+    <!-- Fila 2 -->
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+    <div class="tulip"></div>
+  </div>
+
+</body>
+</html>
